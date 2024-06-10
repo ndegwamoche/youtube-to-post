@@ -8,9 +8,7 @@ if (!class_exists('YTP_API_Key')) {
 
     class YTP_API_Key {
 
-        private $client_id = 'xxxxxx';
-        private $client_secret = 'xxxxxx';
-        private $refresh_token = 'xxxxxx';
+
         private $access_token;
 
         function __construct() {
