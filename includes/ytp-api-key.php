@@ -8,9 +8,9 @@ if (!class_exists('YTP_API_Key')) {
 
     class YTP_API_Key {
 
-        private $client_id = '879899071424-fbbd9jn4n6opddonhi1i1gqlod3k3mc6.apps.googleusercontent.com';
-        private $client_secret = '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';
-        private $refresh_token = '1//05T9bwxEjRNGiCgYIARAAGAUSNwF-L9IrTe2hdpeAMrZEGyXJnGLPu42Voa9acmAQ0BuEqDgF-btqOVHvIKvkfhOBY-1DacaZQX4';
+        private $client_id = 'xxxxxx';
+        private $client_secret = 'xxxxxx';
+        private $refresh_token = 'xxxxxx';
         private $access_token;
 
         function __construct() {
