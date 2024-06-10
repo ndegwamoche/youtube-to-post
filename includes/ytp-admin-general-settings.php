@@ -12,8 +12,7 @@ if (!defined('ABSPATH')) {
             <div class="jumbotron">
                 <h1>General Settings</h1>
                 <p>Welcome to the YouTube to Post plugin's General Settings page. Here you can configure essential options to customize how YouTube videos are imported and displayed on your site. Fill up the settings below to set up your preferences:</p>
-                <p><a class="btn btn-success btn-lg" role="button">Import Videos</a>
-                </p>
+                <button class="btn btn-success btn-lg import-videos-button" type="button">Import Videos</button>
             </div>
         </div>
     </div>
@@ -27,7 +26,7 @@ if (!defined('ABSPATH')) {
                     <div class="row">
                         <div class="col-lg-6">
 
-                            <form method="POST">
+                            <form method="POST" id="ytp-general-settings-form">
                                 <input type="hidden" name="ytp_general_settings_submitted" value="true">
                                 <?php wp_nonce_field('ytp_save_general_settings', 'ytp_general_settings_nonce'); ?>
                                 <div class="form-group">

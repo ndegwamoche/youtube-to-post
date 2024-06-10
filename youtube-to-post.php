@@ -20,10 +20,8 @@ if (!class_exists('YTP')) {
     {
         function __construct()
         {
-            //call admin section
             require_once plugin_dir_path(__FILE__) . 'includes/ytp-admin.php';
-
-            $ytp_admin = new YTP_Admin();
+            require_once plugin_dir_path(__FILE__) . 'includes/ytp-rest-routes.php';
         }
     }
 
