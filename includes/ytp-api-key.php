@@ -6,14 +6,15 @@ if (!defined('ABSPATH')) {
 
 if (!class_exists('YTP_API_Key')) {
 
-    class YTP_API_Key {
-
-        private $client_id = 'xxxxxx';
-        private $client_secret = 'xxxxxx';
-        private $refresh_token = 'xxxxxx';
+    class YTP_API_Key
+    {
+        private $client_id = '879899071424-fbbd9jn4n6opddonhi1i1gqlod3k3mc6.apps.googleusercontent.com';
+        private $client_secret = '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';
+        private $refresh_token = '1//05T9bwxEjRNGiCgYIARAAGAUSNwF-L9IrTe2hdpeAMrZEGyXJnGLPu42Voa9acmAQ0BuEqDgF-btqOVHvIKvkfhOBY-1DacaZQX4';
         private $access_token;
 
-        function __construct() {
+        function __construct()
+        {
             // Optionally initialize things if needed
         }
 
@@ -22,7 +23,8 @@ if (!class_exists('YTP_API_Key')) {
          * 
          * @return bool|string The access token on success, false on failure.
          */
-        private function get_access_token() {
+        private function get_access_token()
+        {
             $url = 'https://oauth2.googleapis.com/token';
             $body = array(
                 'client_id' => $this->client_id,
@@ -56,7 +58,8 @@ if (!class_exists('YTP_API_Key')) {
          * @param string $query The search query.
          * @return array|bool The search results on success, false on failure.
          */
-        public function search_youtube($query) {
+        public function search_youtube($query)
+        {
             if (!$this->access_token && !$this->get_access_token()) {
                 return false;
             }
